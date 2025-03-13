@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.omot {
+    width: 900px;
+    height: 700px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: dodgerblue;
+    color: yellowgreen;
+    text-align: center;
+    padding: 15px;
+}
+
+.sadrzaj {
+    display: flex;
+    flex: 1;
+}
+
+aside {
+    width: 20%;
+    background-color: lightseagreen;
+    padding: 20px;
+}
+
+main {
+    width: 80%;
+    background-color: darkslateblue;
+    padding: 20px;
+}
+
+footer {
+    background-color: royalblue;
+    color:steelblue;
+    text-align: center;
+    padding: 15px;
+}
