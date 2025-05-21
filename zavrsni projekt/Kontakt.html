@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Kontakt - Hip Hop Kultura</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="index.css"/>
+    <link rel="stylesheet" href="flexbox.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Kontaktiraj nas</h1>
+    <nav>
+        <a href="index.html">Početna</a>
+        <a href="izvodaci.html">Izvođači</a>
+        <a href="hip_hop_galerija.html">Galerija</a>
+        <a href="O_hiphopu.html">O hip-hopu</a>
+        <a href="kontakt.html">Kontakt</a>
+    </nav>
+</header>
+
+<main>
+    <section class="kontakt">
+        <h2>Prijavi se za suradnju, nastup ili radionicu</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="ime">Ime i prezime:</label>
+                <input type="text" id="ime" name="ime" required />
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email adresa:</label>
+                <input type="email" id="email" name="email" required />
+            </div>
+
+            <div class="form-group">
+                <label for="tip">Zanima me:</label>
+                <select id="tip" name="tip">
+                    <option value="nastup">Nastup na eventu</option>
+                    <option value="radionica">Radionica</option>
+                    <option value="suradnja">Glazbena suradnja</option>
+                    <option value="mediji">Medijska suradnja</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="poruka">Poruka:</label>
+                <textarea id="poruka" name="poruka" rows="5" required></textarea>
+            </div>
+
+            <button type="submit">Pošalji</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Hip Hop Kultura. Sva prava pridržana.</p>
+</footer>
+</body>
+</html>

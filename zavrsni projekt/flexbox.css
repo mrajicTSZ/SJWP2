@@ -1,0 +1,110 @@
+/* Osnovni stil */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image:url("img/nwa.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 14px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background-color: #444;
+}
+
+/* Main */
+main {
+    flex: 1;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Sekcije s tekstom i slikom */
+section {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2em;
+    border-radius: 12px;
+    margin-bottom: 2em;
+}
+
+section .tekst, section .slika {
+    flex: 1 1 300px;
+}
+
+section img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.85);
+    text-align: center;
+    padding: 1em;
+    font-size: 0.9em;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    section ul {
+        text-align: left;
+        display: inline-block;
+    }
+}
